@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card, Icon } from "semantic-ui-react";
+import { Card, Icon, Image } from "semantic-ui-react";
 import { UserContext } from "../providers/UserProvider";
 
 const User = () => {
@@ -10,6 +10,7 @@ const User = () => {
   return (
     <Card color='blue'>
       <Card.Content>
+        <Image floated='right' size='mini' src='/missy-small.png' />
         <Icon name='user' />
         <Card.Header>
           {firstName}
