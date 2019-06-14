@@ -1,12 +1,12 @@
 import React from "react";
-import Account from "./User";
-import AccountForm from "./UserForm";
+import User from "./User";
+import UserForm from "./UserForm";
 
-const AccountProfile = () => (
+const UserProfile = () => (
   <>
-    <Account />
-    <AccountForm />
+    <User />
+    <UserForm />
   </>
 );
 
-export default AccountProfile;
+export default UserProfile;
