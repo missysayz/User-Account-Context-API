@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "semantic-ui-react";
 import { UserConsumer } from "../providers/UserProvider";
 
-class AccountForm extends React.Component {
+class UserForm extends React.Component {
   state = {
     firstName: this.props.firstName,
     lastName: this.props.lastName,
@@ -15,6 +15,8 @@ class AccountForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    const user = { ...this.state };
+    this.props.updateUser(user);
   };
 
   render() {
@@ -62,18 +64,18 @@ class AccountForm extends React.Component {
   }
 }
 
-const ConnectedAccountForm = props => {
+const ConnectedUserForm = props => {
   return (
     <UserConsumer>
       {value => (
-        <AccountForm
+        <UserForm
           {...props}
           firstName={value.firstName}
           lastName={value.lastName}
           email={value.email}
           avatar={value.avatar}
           favoriteColor={value.favoriteColor}
-          updateAccount={value.updateAccount}
+          updateUser={value.updateUser}
         />
       )}
     </UserConsumer>
@@ -89,4 +91,4 @@ const colorOptions = [
   { key: "a", text: "Aqua", value: "Aqua" }
 ];
 
-export default ConnectedAccountForm;
+export default ConnectedUserForm;

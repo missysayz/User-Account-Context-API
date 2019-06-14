@@ -10,7 +10,7 @@ const Navbar = () => (
         <NavLink to='/'>
           <Menu.Item>Home</Menu.Item>
         </NavLink>
-        <NavLink to='/account/profile'>
+        <NavLink to='/user/profile'>
           <Menu.Item>{value.firstName}</Menu.Item>
         </NavLink>
       </Menu>

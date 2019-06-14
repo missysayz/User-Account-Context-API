@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import { Container } from "semantic-ui-react";
 import { Switch, Route } from "react-router-dom";
-import AccountProfile from "./components/AccountProfile";
+import AccountProfile from "./components/UserProfile";
 
 const App = () => (
   <>
