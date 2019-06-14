@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 import { UserContext } from "../providers/UserProvider";
 
 const User = () => {
@@ -8,8 +8,9 @@ const User = () => {
   );
 
   return (
-    <Card>
+    <Card color='blue'>
       <Card.Content>
+        <Icon name='user' />
         <Card.Header>
           {firstName}
           {lastName}
@@ -20,7 +21,7 @@ const User = () => {
         <p>Avatar {avatar}</p>
       </Card.Content>
       <Card.Content>
-        <p>Favorite color {favoriteColor}</p>
+        <p>Favorite color: {favoriteColor}</p>
       </Card.Content>
     </Card>
   );
