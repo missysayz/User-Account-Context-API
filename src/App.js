@@ -6,7 +6,7 @@ import UserProfile from "./components/UserProfile";
 import styled from "styled-components";
 
 const AppContainer = styled.div`
-  background: linear-gradient(to bottom right, aliceblue, black);
+  background: linear-gradient(to bottom right, pink, red);
 `;
 
 const App = () => (
@@ -20,7 +20,7 @@ const App = () => (
           render={() => (
             <div>
               <Header as='h1' textAlign='center'>
-                User Account with React Context API{" "}
+                User Account with React Context API
               </Header>
             </div>
           )}

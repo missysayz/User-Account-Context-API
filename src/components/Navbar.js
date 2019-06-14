@@ -7,7 +7,7 @@ const Navbar = () => (
   <UserConsumer>
     {value => (
       <Menu>
-        <NavLink color='blue' to='/'>
+        <NavLink to='/'>
           <Menu.Item>Home</Menu.Item>
         </NavLink>
         <NavLink to='/user/profile'>
