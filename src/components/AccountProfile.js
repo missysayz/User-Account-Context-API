@@ -1,11 +1,11 @@
-import react from "react";
+import React from "react";
 import Account from "./Account";
 import AccountForm from "./AccountForm";
 
 const AccountProfile = () => (
   <>
-    <Account />>
-    <AccountForm />>
+    <Account />
+    <AccountForm />
   </>
 );
 
